@@ -1,13 +1,19 @@
 {
   "name": "portfolio_nextjs",
   "version": "0.1.0",
+  "homepage": "https://mill1995.github.io/yannick.github.io",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "test": "next test",
+    "eject": "next eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "next": "^12.0.10",
     "react": "17.0.2",
     "react-dom": "17.0.2",
